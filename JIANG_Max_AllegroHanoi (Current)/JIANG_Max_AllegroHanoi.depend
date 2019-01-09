@@ -1,0 +1,187 @@
+# depslib dependency file v1.0
+1542153977 source:c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi\main.cpp
+	"Peg.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<vector>
+	<iostream>
+
+1542153797 c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi\peg.h
+
+1542153804 source:c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi\peg.cpp
+	"Peg.h"
+	<iostream>
+
+1542306264 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi\main.cpp
+	"Peg.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<vector>
+	<iostream>
+
+1542303901 \\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi\peg.h
+	<vector>
+
+1542303928 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi\peg.cpp
+	"Peg.h"
+	<vector>
+	<iostream>
+
+1542942442 source:c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi (current)\peg.cpp
+	"Peg.h"
+	<vector>
+	<algorithm>
+
+1542936380 c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi (current)\peg.h
+	<vector>
+
+1542979280 source:c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi (current)\main.cpp
+	"Peg.h"
+	"Button.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<vector>
+	<iostream>
+
+1542936949 source:c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi (current)\button.cpp
+	"Button.h"
+	<string>
+
+1542936862 c:\users\max\documents\c++ programs\acoursework-max-jiang\jiang_max_allegrohanoi (current)\button.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+
+1542914074 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\button.cpp
+	"Button.h"
+	<string>
+
+1542651888 \\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\button.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+
+1542916120 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\main.cpp
+	"Peg.h"
+	"Button.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<vector>
+	<iostream>
+
+1542823961 \\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\peg.h
+	<vector>
+
+1542914073 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\peg.cpp
+	"Peg.h"
+	<vector>
+	<algorithm>
+
+1543260182 source:p:\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\button.cpp
+	"Button.h"
+	<string>
+
+1543258180 p:\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\button.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+
+1543260181 source:p:\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\main.cpp
+	"Peg.h"
+	"Button.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<vector>
+	<iostream>
+
+1543258181 p:\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\peg.h
+	<vector>
+
+1543260182 source:p:\github\coursework-max-jiang\jiang_max_allegrohanoi (current)\peg.cpp
+	"Peg.h"
+	<vector>
+	<algorithm>
+
+1543260182 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\coursework-max-jiang\jiang_max_allegrohanoi (current)\button.cpp
+	"Button.h"
+	<string>
+
+1543258180 \\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\coursework-max-jiang\jiang_max_allegrohanoi (current)\button.h
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<string>
+
+1543260181 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\coursework-max-jiang\jiang_max_allegrohanoi (current)\main.cpp
+	"Peg.h"
+	"Button.h"
+	<allegro5/allegro.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<vector>
+	<iostream>
+
+1543258181 \\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\coursework-max-jiang\jiang_max_allegrohanoi (current)\peg.h
+	<vector>
+
+1543260182 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\coursework-max-jiang\coursework-max-jiang\jiang_max_allegrohanoi (current)\peg.cpp
+	"Peg.h"
+	<vector>
+	<algorithm>
+
