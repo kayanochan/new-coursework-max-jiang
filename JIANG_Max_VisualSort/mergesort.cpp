@@ -1,3 +1,5 @@
 #include "mergesort.h"
 
-void mergesort(vector<int> &in)
+void mergesort(vector<int> &in) {
+
+}

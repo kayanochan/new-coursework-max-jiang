@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="allegro_ini.cpp" />
+		<Unit filename="allegro_ini.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="mergesort.cpp" />
 		<Unit filename="mergesort.h" />
