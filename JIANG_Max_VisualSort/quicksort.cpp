@@ -1,14 +1,12 @@
-#include <vector>
-using namespace std;
-
-void quicksort(vector<int> &in, int high, int low = 0);
-int doPartition(vector<int> &in, int high, int low = 0);
+#include "quicksort.h"
 
 void quicksort(vector<int> &in, int high, int low) {
 
-    int split = doPartition(in, high);
-    quicksort(in, split);
-    quicksort(in, high, split);
+    if (low < high) {
+        int split = doPartition(in, high, low);
+        quicksort(in, split, low);
+        quicksort(in, high, split + 1);
+    }
 
 }
 
@@ -20,10 +18,10 @@ int doPartition(vector<int> &in, int high, int low) {
     while (true) {
         do {
             i++;
-        } while (in[i] <= pivot);
+        } while (in[i] < pivot);
         do {
             j--;
-        } while (in[j] >= pivot);
+        } while (in[j] > pivot);
         if (i >= j) {
             return j;
         }
