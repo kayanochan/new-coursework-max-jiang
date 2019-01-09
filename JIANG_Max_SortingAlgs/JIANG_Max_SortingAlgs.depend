@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1546976886 source:p:\github\coursework-max-jiang\jiang_max_sortingalgs\main.cpp
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1545242457 source:p:\github\coursework-max-jiang\jiang_max_cardroulette\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
