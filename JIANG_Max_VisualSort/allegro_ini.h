@@ -34,11 +34,11 @@
 // Initialize Frames per second
 const float FPS = 256;
 // Screen width
-const int SW = 1400;
+const int SW = 1100;
 // Screen height
-const int SH = 800;
+const int SH = 600;
 
-int initializeAllegro(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
-                      ALLEGRO_TIMER *timer, ALLEGRO_FONT *font);
+int initializeAllegro(ALLEGRO_DISPLAY *&display, ALLEGRO_EVENT_QUEUE *&event_queue,
+                      ALLEGRO_TIMER *&timer, ALLEGRO_FONT *&font);
 
 #endif // _ALLEGRO_INI_H

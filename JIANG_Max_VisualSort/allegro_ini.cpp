@@ -1,7 +1,7 @@
 #include "allegro_ini.h"
 
-int initializeAllegro(ALLEGRO_DISPLAY *display, ALLEGRO_EVENT_QUEUE *event_queue,
-                      ALLEGRO_TIMER *timer, ALLEGRO_FONT *font) {
+int initializeAllegro(ALLEGRO_DISPLAY *&display, ALLEGRO_EVENT_QUEUE *&event_queue,
+                      ALLEGRO_TIMER *&timer, ALLEGRO_FONT *&font) {
 
     // Initialize Allegro
     al_init();

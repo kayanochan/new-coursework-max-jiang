@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
 
             al_clear_to_color(BLACK);
 
-            al_draw_circle(SW / 2, SH / 2, 100, WHITE, 10);
+            al_draw_circle(SW / 2, SH / 2, 150, WHITE, 10);
 
       	}
 
