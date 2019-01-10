@@ -31,10 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-<<<<<<< HEAD
 		<Unit filename="main.cpp" />
-=======
->>>>>>> parent of cd3be34... Merge branch 'master' of https://github.com/Lisgar1819-4U-1/coursework-max-jiang
 		<Extensions>
 			<code_completion />
 			<envvars />

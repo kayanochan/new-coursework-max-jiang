@@ -2,6 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <time.h>
+#include <stdlib.h>
+#include <ctime>
 using namespace std;
 
 void bubblesort(vector<int> &in);
@@ -12,6 +15,7 @@ vector<int> sleepsort(vector<int> in);
 
 int main() {
 
+    srand(time(0));
     ifstream inFile("data.txt");
     int n, temp;
     inFile >> n;
@@ -20,19 +24,19 @@ int main() {
         inFile >> temp;
         l.push_back(temp);
     }
+    for (int i = 0; i < 1000; i++) {
+        l.push_back(rand() % 1000 + 1);
+    }
 
     vector<int> newList = sleepsort(l);
-
-    for (int i = 0; i < n; i++) {
-        cout << newList[i] << 'a';
-    }
+    bubblesort(l);
 
     return 0;
 
 }
 
 void bubblesort(vector<int> &in) {
-
+    time_t start = clock();
     int index, temp, change = 1;
     while (change) {
         change = 0;
@@ -45,21 +49,27 @@ void bubblesort(vector<int> &in) {
             }
         }
     }
-
+    cout << clock() - start << endl;
 }
 
 vector<int> sleepsort(vector<int> in) {
-
-    vector<int> out, timer(in.size(), 0);
+    time_t start = clock();
+    vector<int> out, timer;
+    for (int i = 0; i < in.size(); i++) {
+        timer.push_back(in[i]);
+    }
 
     while (out.size() < in.size()) {
         for (int i = 0; i < in.size(); i++) {
-            timer[i]++;
-            if (timer[i] == in[i]) {
-                out.push_back(in[i]);
+            if (timer[i]) {
+                timer[i]--;
+                if (!timer[i]) {
+                    out.push_back(in[i]);
+                }
             }
         }
     }
+    cout << clock() - start << endl;
 
     return out;
 
