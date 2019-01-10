@@ -1,19 +1,14 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-<<<<<<< HEAD
 #include <algorithm>
-=======
->>>>>>> parent of cd3be34... Merge branch 'master' of https://github.com/Lisgar1819-4U-1/coursework-max-jiang
 using namespace std;
 
 void bubblesort(vector<int> &in);
 void insertionsort(vector<int> &in);
 void selectionsort(vector<int> &in);
-<<<<<<< HEAD
 int binarysearch(vector<int> in, int a);
-=======
->>>>>>> parent of cd3be34... Merge branch 'master' of https://github.com/Lisgar1819-4U-1/coursework-max-jiang
+vector<int> sleepsort(vector<int> in);
 
 int main() {
 
@@ -26,18 +21,10 @@ int main() {
         l.push_back(temp);
     }
 
-    selectionsort(l);
+    vector<int> newList = sleepsort(l);
 
     for (int i = 0; i < n; i++) {
-<<<<<<< HEAD
-        cout << l[i] << ' ';
-    }
-
-    for (int i = 0; i < n; i++) {
-        cout << binarysearch(l, i+1) << endl;
-=======
-        cout << l[i] << endl;
->>>>>>> parent of cd3be34... Merge branch 'master' of https://github.com/Lisgar1819-4U-1/coursework-max-jiang
+        cout << newList[i] << 'a';
     }
 
     return 0;
@@ -58,6 +45,23 @@ void bubblesort(vector<int> &in) {
             }
         }
     }
+
+}
+
+vector<int> sleepsort(vector<int> in) {
+
+    vector<int> out, timer(in.size(), 0);
+
+    while (out.size() < in.size()) {
+        for (int i = 0; i < in.size(); i++) {
+            timer[i]++;
+            if (timer[i] == in[i]) {
+                out.push_back(in[i]);
+            }
+        }
+    }
+
+    return out;
 
 }
 
@@ -101,7 +105,6 @@ void selectionsort(vector<int> &in) {
     }
 
 }
-<<<<<<< HEAD
 
 int binarysearch(vector<int> in, int a) {
 
@@ -121,5 +124,3 @@ int binarysearch(vector<int> in, int a) {
     return index;
 
 }
-=======
->>>>>>> parent of cd3be34... Merge branch 'master' of https://github.com/Lisgar1819-4U-1/coursework-max-jiang
