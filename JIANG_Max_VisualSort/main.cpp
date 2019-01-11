@@ -4,6 +4,9 @@
 
 int main(int argc, char *argv[]) {
 
+    // Seed random
+	srand(time(0));
+
     // Display
     ALLEGRO_DISPLAY *display = nullptr;
     // Event queue object
@@ -20,9 +23,11 @@ int main(int argc, char *argv[]) {
     bool doexit = false;
     ALLEGRO_EVENT ev;
     ALLEGRO_MOUSE_STATE mouse;
-
-	// Seed random
-	srand(time(0));
+    vector<int> master;
+    for (int i = 0; i < 500; i++) {
+        master.push_back(i+1);
+    }
+    scramble(master);
 
 	while (!doexit) {
 
@@ -41,8 +46,15 @@ int main(int argc, char *argv[]) {
 
             al_clear_to_color(BLACK);
 
-            al_draw_circle(SW / 2, SH / 2, 150, WHITE, 10);
+            al_draw_filled_circle(SW / 2, SH / 2, 150, YELLOW);
 
+            drawGraph(master);
+
+      	}
+
+      	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
+                 ev.keyboard.keycode == ALLEGRO_KEY_S) {
+                 quicksort(master, master.size(), 0);
       	}
 
       	al_flip_display();

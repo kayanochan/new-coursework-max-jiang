@@ -10,6 +10,9 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
+#include <algorithm>
+#include <vector>
+using namespace std;
 
 // Define Allegro colors
 #define BLACK	 al_map_rgb(0, 0, 0)
@@ -34,9 +37,9 @@
 // Initialize Frames per second
 const float FPS = 256;
 // Screen width
-const int SW = 1100;
+const float SW = 1100;
 // Screen height
-const int SH = 600;
+const float SH = 600;
 
 int initializeAllegro(ALLEGRO_DISPLAY *&display, ALLEGRO_EVENT_QUEUE *&event_queue,
                       ALLEGRO_TIMER *&timer, ALLEGRO_FONT *&font);

@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1547058359 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
+1547230226 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
 	"quicksort.h"
 
-1547149953 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
+1547230193 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
 	"quicksort.h"
 	"mergesort.h"
 	<iostream>
@@ -10,9 +10,8 @@
 1547057169 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
 	<vector>
 
-1547146216 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.h
-	"allegro_ini.h"
-	<vector>
+1547228344 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.h
+	"functions.h"
 
 1547064536 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
 	"quicksort.h"
@@ -52,7 +51,7 @@
 1547150031 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.cpp
 	"allegro_ini.h"
 
-1547150031 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.h
+1547228719 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.h
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_native_dialog.h>
@@ -62,11 +61,18 @@
 	<stdio.h>
 	<time.h>
 	<math.h>
-
-1547146215 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
-	"allegro_ini.h"
+	<algorithm>
 	<vector>
+
+1547228343 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
+	"functions.h"
 
 1547146215 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
 	"mergesort.h"
+
+1547229727 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.h
+	"allegro_ini.h"
+
+1547229972 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.cpp
+	"functions.h"
 
