@@ -33,6 +33,8 @@
 		</Compiler>
 		<Unit filename="allegro_ini.cpp" />
 		<Unit filename="allegro_ini.h" />
+		<Unit filename="functions.cpp" />
+		<Unit filename="functions.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="mergesort.cpp" />
 		<Unit filename="mergesort.h" />

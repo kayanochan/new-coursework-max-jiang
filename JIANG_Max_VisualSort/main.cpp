@@ -24,8 +24,8 @@ int main(int argc, char *argv[]) {
     ALLEGRO_EVENT ev;
     ALLEGRO_MOUSE_STATE mouse;
     vector<int> master;
-    for (int i = 0; i < 500; i++) {
-        master.push_back(i+1);
+    for (int i = 0; i < 1000; i++) {
+        master.push_back(rand()%1000+1);
     }
     scramble(master);
 
@@ -52,8 +52,12 @@ int main(int argc, char *argv[]) {
 
       	}
 
-      	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
+      	if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_S) {
+                 scramble(master);
+      	}
+      	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
+                 ev.keyboard.keycode == ALLEGRO_KEY_Q) {
                  quicksort(master, master.size(), 0);
       	}
 
