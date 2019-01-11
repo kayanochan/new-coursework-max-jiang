@@ -20,16 +20,19 @@ int main() {
     int n, temp;
     inFile >> n;
     vector <int> l;
+    // Initialize vector
     for (int i = 0; i < n; i++) {
         inFile >> temp;
         l.push_back(temp);
     }
-    for (int i = 0; i < 1000; i++) {
-        l.push_back(rand() % 1000 + 1);
-    }
 
-    vector<int> newList = sleepsort(l);
-    bubblesort(l);
+    // Sort list
+    selectionsort(l);
+
+    // Find all terms
+    for (int i = 0; i < n; i++) {
+        cout << l[i] << " found at " << binarysearch(l, l[i]) << endl;
+    }
 
     return 0;
 
@@ -118,17 +121,16 @@ void selectionsort(vector<int> &in) {
 
 int binarysearch(vector<int> in, int a) {
 
-    int index = in.size() / 2, s = 4;
+    int index = in.size() / 2, s = in.size() / 2;
 
     while (in[index] != a && index >= 0 && index <= in.size()) {
+        s /= 2;
         if (in[index] > a) {
-            index -= max((int)in.size() / s, 1);
+            index -= max(s, 1);
         }
         else {
-            index += max((int)in.size() / s, 1);
-
+            index += max(s, 1);
         }
-        s *= 2;
     }
 
     return index;
