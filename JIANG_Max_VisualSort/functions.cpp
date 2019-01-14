@@ -27,4 +27,8 @@ void scramble(vector<int> &in) {
         in.push_back(deck[temp]);
         deck.erase(deck.begin()+temp);
     }
+    al_clear_to_color(BLACK);
+    al_draw_filled_circle(SW / 2, SH / 2, 150, YELLOW);
+    drawGraph(in);
+    al_flip_display();
 }

@@ -40,6 +40,8 @@
 		<Unit filename="mergesort.h" />
 		<Unit filename="quicksort.cpp" />
 		<Unit filename="quicksort.h" />
+		<Unit filename="selectionsort.cpp" />
+		<Unit filename="selectionsort.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
