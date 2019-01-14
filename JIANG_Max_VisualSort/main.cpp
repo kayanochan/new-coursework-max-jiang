@@ -1,5 +1,6 @@
 #include "quicksort.h"
 #include "mergesort.h"
+#include "selectionsort.h"
 #include <iostream>
 
 int main(int argc, char *argv[]) {
@@ -25,9 +26,13 @@ int main(int argc, char *argv[]) {
     ALLEGRO_MOUSE_STATE mouse;
     vector<int> master;
     for (int i = 0; i < 1000; i++) {
-        master.push_back(rand()%1000+1);
+        master.push_back(i);
     }
     scramble(master);
+
+    al_clear_to_color(BLACK);
+    al_draw_filled_circle(SW / 2, SH / 2, 150, YELLOW);
+    drawGraph(master);
 
 	while (!doexit) {
 
@@ -44,12 +49,6 @@ int main(int argc, char *argv[]) {
       	// On timer
       	else if (ev.type == ALLEGRO_EVENT_TIMER) {
 
-            al_clear_to_color(BLACK);
-
-            al_draw_filled_circle(SW / 2, SH / 2, 150, YELLOW);
-
-            drawGraph(master);
-
       	}
 
       	if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
@@ -59,6 +58,10 @@ int main(int argc, char *argv[]) {
       	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_Q) {
                  quicksort(master, master.size(), 0);
+      	}
+      	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
+                 ev.keyboard.keycode == ALLEGRO_KEY_L) {
+                 selectionsort(master);
       	}
 
       	al_flip_display();
