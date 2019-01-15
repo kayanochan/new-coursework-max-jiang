@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     ALLEGRO_EVENT ev;
     ALLEGRO_MOUSE_STATE mouse;
     vector<int> master;
-    for (int i = 0; i < 1024; i++) {
+    for (int i = 0; i < 10000; i++) {
         master.push_back(i);
     }
     scramble(master);
