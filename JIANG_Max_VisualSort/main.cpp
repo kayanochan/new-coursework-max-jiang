@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     ALLEGRO_EVENT ev;
     ALLEGRO_MOUSE_STATE mouse;
     vector<int> master;
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1024; i++) {
         master.push_back(i);
     }
     scramble(master);
@@ -62,6 +62,10 @@ int main(int argc, char *argv[]) {
       	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_L) {
                  selectionsort(master);
+      	}
+      	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
+                 ev.keyboard.keycode == ALLEGRO_KEY_M) {
+                 mergesort(master, 0, master.size());
       	}
 
       	al_flip_display();

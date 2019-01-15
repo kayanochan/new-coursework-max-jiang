@@ -2,7 +2,7 @@
 1547230226 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
 	"quicksort.h"
 
-1547495844 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
+1547574721 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
 	"quicksort.h"
 	"mergesort.h"
 	"selectionsort.h"
@@ -65,16 +65,16 @@
 	<algorithm>
 	<vector>
 
-1547228343 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
+1547574344 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
 	"functions.h"
 
-1547495817 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
+1547575357 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
 	"mergesort.h"
 
 1547229727 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.h
 	"allegro_ini.h"
 
-1547229972 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.cpp
+1547495944 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.cpp
 	"functions.h"
 
 1547493645 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.cpp

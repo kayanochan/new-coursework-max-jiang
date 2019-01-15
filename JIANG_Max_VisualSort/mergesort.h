@@ -3,6 +3,6 @@
 
 #include "functions.h"
 
-void mergesort(vector<int> &in);
+vector<int> mergesort(vector<int> &in, int start, int finish);
 
 #endif // _MERGESORT_H
