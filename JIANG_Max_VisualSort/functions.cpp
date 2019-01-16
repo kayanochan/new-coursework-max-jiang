@@ -1,6 +1,8 @@
 #include "functions.h"
 
-void drawGraph(const vector<int> &in) {
+void drawGraph(const vector<int> &in, ALLEGRO_FONT *font, int compares, int swaps) {
+
+    al_clear_to_color(BLACK);
 
     int big = in[0];
     for (int i = 1; i < in.size(); i++) {
@@ -12,9 +14,16 @@ void drawGraph(const vector<int> &in) {
                                  100+(SW-200)/in.size()*(i+1), SH-50, GREY);
     }
 
+    al_draw_textf(font, WHITE, SW / 3, SH - 50,
+                  ALLEGRO_ALIGN_CENTER, "%d comparison(s)", compares);
+    al_draw_textf(font, WHITE, 2 * SW / 3, SH - 50,
+                  ALLEGRO_ALIGN_CENTER, "%d swap(s)", swaps);
+
+    al_flip_display();
+
 }
 
-void scramble(vector<int> &in) {
+void scramble(vector<int> &in, ALLEGRO_FONT *font) {
 
     vector<int> deck;
     int temp, vecSize = in.size();
@@ -27,8 +36,5 @@ void scramble(vector<int> &in) {
         in.push_back(deck[temp]);
         deck.erase(deck.begin()+temp);
     }
-    al_clear_to_color(BLACK);
-    al_draw_filled_circle(SW / 2, SH / 2, 150, YELLOW);
-    drawGraph(in);
-    al_flip_display();
+    drawGraph(in, font);
 }

@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     ALLEGRO_EVENT_QUEUE *event_queue = nullptr;
     // Timer object
     ALLEGRO_TIMER *timer = nullptr;
-    // Writing font
+    // Font
     ALLEGRO_FONT *font;
 
     // Initialize Allegro
@@ -24,15 +24,14 @@ int main(int argc, char *argv[]) {
     bool doexit = false;
     ALLEGRO_EVENT ev;
     ALLEGRO_MOUSE_STATE mouse;
+    int compares = 0, swaps = 0;
     vector<int> master;
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 100; i++) {
         master.push_back(i);
     }
-    scramble(master);
+    scramble(master, font);
 
-    al_clear_to_color(BLACK);
-    al_draw_filled_circle(SW / 2, SH / 2, 150, YELLOW);
-    drawGraph(master);
+    drawGraph(master, font);
 
 	while (!doexit) {
 
@@ -46,29 +45,24 @@ int main(int argc, char *argv[]) {
             doexit = true;
       	}
 
-      	// On timer
-      	else if (ev.type == ALLEGRO_EVENT_TIMER) {
-
-      	}
-
       	if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_S) {
-                 scramble(master);
+                 scramble(master, font);
+                 compares = 0;
+                 swaps = 0;
       	}
       	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_Q) {
-                 quicksort(master, master.size(), 0);
+                 quicksort(master, master.size(), 0, font, compares, swaps);
       	}
       	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_L) {
-                 selectionsort(master);
+                 selectionsort(master, font, compares, swaps);
       	}
       	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_M) {
-                 mergesort(master, 0, master.size());
+                 mergesort(master, 0, master.size(), font, compares, swaps);
       	}
-
-      	al_flip_display();
 
 	}
 

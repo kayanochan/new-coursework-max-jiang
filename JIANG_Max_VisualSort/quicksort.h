@@ -3,7 +3,7 @@
 
 #include "functions.h"
 
-void quicksort(vector<int> &in, int high, int low = 0);
-int doPartition(vector<int> &in, int high, int low = 0);
+void quicksort(vector<int> &in, int high, int low, ALLEGRO_FONT *font, int &compares, int &swaps);
+int doPartition(vector<int> &in, int high, int low, ALLEGRO_FONT *font, int &compares, int &swaps);
 
 #endif // _QUICKSORT_H

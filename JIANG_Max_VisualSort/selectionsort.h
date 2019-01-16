@@ -3,6 +3,6 @@
 
 #include "functions.h"
 
-void selectionsort(vector<int> &in);
+void selectionsort(vector<int> &in, ALLEGRO_FONT *font, int &compares, int &swaps);
 
 #endif // _SELECTIONSORT_H
