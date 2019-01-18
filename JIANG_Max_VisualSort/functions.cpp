@@ -43,16 +43,83 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
 
     bool done = false;
 
-    al_draw_text(font, WHITE, SW / 2, SH /2 ,
-                 ALLEGRO_ALIGN_CENTER, "NEW SIZE:");
-    al_flip_display();
-
     while (!done) {
 
         // Wait for event
         al_wait_for_event(event_queue, &ev);
 
-    }
+        if (ev.type == ALLEGRO_EVENT_KEY_DOWN) {
 
+            // Adding digits
+            if (ev.keyboard.keycode >= 27 && ev.keyboard.keycode <= 36) {
+                typer *= 10;
+                typer += ev.keyboard.keycode - 27;
+
+                // Redraw screen
+                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                al_flip_display();
+            }
+
+            // Deleting digits
+            else if (ev.keyboard.keycode == ALLEGRO_KEY_BACKSPACE ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_DELETE) {
+                typer /= 10;
+
+                // Redraw screen
+                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                al_flip_display();
+            }
+
+            // Increment and decrement by 1
+
+            else if (ev.keyboard.keycode == ALLEGRO_KEY_UP ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_W ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_RIGHT ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_D ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_EQUALS ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_TAB ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_FULLSTOP) {
+                if (!typer) typer = height;
+                typer++;
+
+                // Redraw screen
+                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                al_flip_display();
+            }
+
+            else if (ev.keyboard.keycode == ALLEGRO_KEY_DOWN ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_S ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_LEFT ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_A ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_MINUS ||
+                     ev.keyboard.keycode == ALLEGRO_KEY_COMMA) {
+                if (!typer) typer = height;
+                if (typer > 1) typer--;
+
+                // Redraw screen
+                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                al_flip_display();
+            }
+
+            // Enter number
+            else if (ev.keyboard.keycode == ALLEGRO_KEY_ENTER) {
+                // Set new height, reset pegs
+                if (typer) {
+                    height = typer;
+                    typer = 0;
+                }
+                for (int i = 0; i < 3; i++) pegs[i].toEmpty();
+                for (int i = height; i > 0; i--) pegs[0].push(i);
+                // New tower is solved, but trigger solution generation
+                done = false;
+                enter = false;
+            }
+        }
+
+    }
 
 }
