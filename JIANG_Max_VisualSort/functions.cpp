@@ -38,3 +38,21 @@ void scramble(vector<int> &in, ALLEGRO_FONT *font) {
     }
     drawGraph(in, font);
 }
+
+void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
+
+    bool done = false;
+
+    al_draw_text(font, WHITE, SW / 2, SH /2 ,
+                 ALLEGRO_ALIGN_CENTER, "NEW SIZE:");
+    al_flip_display();
+
+    while (!done) {
+
+        // Wait for event
+        al_wait_for_event(event_queue, &ev);
+
+    }
+
+
+}

@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1547668626 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
+1547839892 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
 	"quicksort.h"
 
-1547668571 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
+1547839586 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
 	"quicksort.h"
 	"mergesort.h"
 	"selectionsort.h"
@@ -68,16 +68,16 @@
 1547667738 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
 	"functions.h"
 
-1547668627 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
+1547839900 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
 	"mergesort.h"
 
-1547668573 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.h
+1547839587 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.h
 	"allegro_ini.h"
 
-1547668485 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.cpp
+1547839592 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\functions.cpp
 	"functions.h"
 
-1547668734 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.cpp
+1547839876 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.cpp
 	"selectionsort.h"
 
 1547668406 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.h

@@ -20,18 +20,15 @@ int doPartition(vector<int> &in, int high, int low, ALLEGRO_FONT *font, int &com
         do {
             i++;
             compares++;
-            drawGraph(in, font, compares, swaps);
         } while (in[i] < pivot);
         do {
             j--;
             compares++;
-            drawGraph(in, font, compares, swaps);
         } while (in[j] > pivot);
         if (i >= j) {
             return j;
         }
         compares++;
-        drawGraph(in, font, compares, swaps);
 
         temp = in[i];
         in[i] = in[j];

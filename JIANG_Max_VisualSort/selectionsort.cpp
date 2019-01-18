@@ -12,7 +12,6 @@ void selectionsort(vector<int> &in, ALLEGRO_FONT *font, int &compares, int &swap
                 small = in[j];
             }
             compares++;
-            drawGraph(in, font, compares, swaps);
         }
         if (minInd != i) {
             temp = in[i];

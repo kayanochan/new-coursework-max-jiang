@@ -15,7 +15,6 @@ vector<int> mergesort(vector<int> &in, int start, int finish, ALLEGRO_FONT *font
                 in[start + i] = sub1[index1];
                 index1++;
                 compares++;
-                drawGraph(in, font, compares, swaps);
             }
             else {
                 in[start + i] = sub2[index2];
