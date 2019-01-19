@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
       	}
       	else if (ev.type == ALLEGRO_EVENT_KEY_DOWN &&
                  ev.keyboard.keycode == ALLEGRO_KEY_3) {
-                changeSize(master, font);
+                changeSize(master, font, event_queue, ev);
       	}
 
 	}

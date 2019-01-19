@@ -39,9 +39,17 @@ void scramble(vector<int> &in, ALLEGRO_FONT *font) {
     drawGraph(in, font);
 }
 
-void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
+void changeSize(vector<int> &in, ALLEGRO_FONT *font,
+                ALLEGRO_EVENT_QUEUE *event_queue, ALLEGRO_EVENT &ev) {
+
+    // Redraw screen
+    al_clear_to_color(BLACK);
+    al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+    al_flip_display();
 
     bool done = false;
+    int typer = in.size();
 
     while (!done) {
 
@@ -56,8 +64,9 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
                 typer += ev.keyboard.keycode - 27;
 
                 // Redraw screen
+                al_clear_to_color(BLACK);
                 al_draw_textf(font, WHITE, SW / 2, SH /2 ,
-                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
                 al_flip_display();
             }
 
@@ -67,8 +76,9 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
                 typer /= 10;
 
                 // Redraw screen
+                al_clear_to_color(BLACK);
                 al_draw_textf(font, WHITE, SW / 2, SH /2 ,
-                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
                 al_flip_display();
             }
 
@@ -81,12 +91,13 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
                      ev.keyboard.keycode == ALLEGRO_KEY_EQUALS ||
                      ev.keyboard.keycode == ALLEGRO_KEY_TAB ||
                      ev.keyboard.keycode == ALLEGRO_KEY_FULLSTOP) {
-                if (!typer) typer = height;
+                if (!typer) typer = in.size();
                 typer++;
 
                 // Redraw screen
+                al_clear_to_color(BLACK);
                 al_draw_textf(font, WHITE, SW / 2, SH /2 ,
-                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
                 al_flip_display();
             }
 
@@ -96,27 +107,24 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font) {
                      ev.keyboard.keycode == ALLEGRO_KEY_A ||
                      ev.keyboard.keycode == ALLEGRO_KEY_MINUS ||
                      ev.keyboard.keycode == ALLEGRO_KEY_COMMA) {
-                if (!typer) typer = height;
+                if (!typer) typer = in.size();
                 if (typer > 1) typer--;
 
                 // Redraw screen
+                al_clear_to_color(BLACK);
                 al_draw_textf(font, WHITE, SW / 2, SH /2 ,
-                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+                         ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
                 al_flip_display();
             }
 
             // Enter number
             else if (ev.keyboard.keycode == ALLEGRO_KEY_ENTER) {
-                // Set new height, reset pegs
-                if (typer) {
-                    height = typer;
-                    typer = 0;
-                }
-                for (int i = 0; i < 3; i++) pegs[i].toEmpty();
-                for (int i = height; i > 0; i--) pegs[0].push(i);
-                // New tower is solved, but trigger solution generation
-                done = false;
-                enter = false;
+                // Set new size
+                in.clear();
+                for (int i = 0; i < typer; i++) in.push_back(i + 1);
+                al_clear_to_color(BLACK);
+                drawGraph(in, font);
+                done = true;
             }
         }
 

@@ -14,28 +14,28 @@
 1547667796 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\quicksort.h
 	"functions.h"
 
-1547064536 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
+1547852555 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\quicksort.cpp
 	"quicksort.h"
 
-1547067612 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\quicksort.h
-	"allegro_ini.h"
-	<vector>
+1547679475 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\quicksort.h
+	"functions.h"
 
-1547067620 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
+1547867527 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\main.cpp
 	"quicksort.h"
 	"mergesort.h"
+	"selectionsort.h"
+	<iostream>
 
-1547066343 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
+1547852555 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\mergesort.cpp
 	"mergesort.h"
 
-1547067616 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
-	"allegro_ini.h"
-	<vector>
+1547679475 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\mergesort.h
+	"functions.h"
 
 1547066757 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.cpp
 	"allegro_ini.h"
 
-1547067880 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.h
+1547249822 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.h
 	<allegro5/allegro.h>
 	<allegro5/allegro_image.h>
 	<allegro5/allegro_native_dialog.h>
@@ -45,8 +45,10 @@
 	<stdio.h>
 	<time.h>
 	<math.h>
+	<algorithm>
+	<vector>
 
-1547067435 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.cpp
+1547249822 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.cpp
 	"allegro_ini.h"
 
 1547667626 source:\\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\allegro_ini.cpp
@@ -82,4 +84,16 @@
 
 1547668406 \\ad.ocdsb.ca\studenthome\9\s347040669\github\new-coursework-max-jiang\new-coursework-max-jiang\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.h
 	"functions.h"
+
+1547867926 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\functions.cpp
+	"functions.h"
+
+1547867514 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\functions.h
+	"allegro_ini.h"
+
+1547679475 c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.h
+	"functions.h"
+
+1547852555 source:c:\users\max\documents\c++ programs\new-coursework-max-jiang\jiang_max_visualsort\selectionsort.cpp
+	"selectionsort.h"
 
