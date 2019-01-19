@@ -5,6 +5,13 @@
 
 int main(int argc, char *argv[]) {
 
+    cout << "Welcome to Visual_Sort" << endl
+         << "'S' to randomize list" << endl
+         << "'Q' to use quick sort" << endl
+         << "'L' to use selection sort" << endl
+         << "'M' to use merge sort" << endl
+         << "'3' to change list size" << endl;
+
     // Seed random
 	srand(time(0));
 

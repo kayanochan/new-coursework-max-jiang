@@ -44,8 +44,10 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font,
 
     // Redraw screen
     al_clear_to_color(BLACK);
-    al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+    al_draw_textf(font, WHITE, SW / 2, SH /2,
                          ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", in.size());
+    al_draw_text(font, WHITE, SW / 2, SH /2 + 20,
+                         ALLEGRO_ALIGN_CENTER, "Enter to finish");
     al_flip_display();
 
     bool done = false;
@@ -65,8 +67,10 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font,
 
                 // Redraw screen
                 al_clear_to_color(BLACK);
-                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                al_draw_textf(font, WHITE, SW / 2, SH /2,
                          ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
+                al_draw_text(font, WHITE, SW / 2, SH /2 + 20,
+                         ALLEGRO_ALIGN_CENTER, "Enter to finish");
                 al_flip_display();
             }
 
@@ -77,8 +81,10 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font,
 
                 // Redraw screen
                 al_clear_to_color(BLACK);
-                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                al_draw_textf(font, WHITE, SW / 2, SH /2,
                          ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
+                al_draw_text(font, WHITE, SW / 2, SH /2 + 20,
+                         ALLEGRO_ALIGN_CENTER, "Enter to finish");
                 al_flip_display();
             }
 
@@ -96,8 +102,10 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font,
 
                 // Redraw screen
                 al_clear_to_color(BLACK);
-                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                al_draw_textf(font, WHITE, SW / 2, SH /2,
                          ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
+                al_draw_text(font, WHITE, SW / 2, SH /2 + 20,
+                         ALLEGRO_ALIGN_CENTER, "Enter to finish");
                 al_flip_display();
             }
 
@@ -112,8 +120,10 @@ void changeSize(vector<int> &in, ALLEGRO_FONT *font,
 
                 // Redraw screen
                 al_clear_to_color(BLACK);
-                al_draw_textf(font, WHITE, SW / 2, SH /2 ,
+                al_draw_textf(font, WHITE, SW / 2, SH /2,
                          ALLEGRO_ALIGN_CENTER, "NEW SIZE: %d", typer);
+                al_draw_text(font, WHITE, SW / 2, SH /2 + 20,
+                         ALLEGRO_ALIGN_CENTER, "Enter to finish");
                 al_flip_display();
             }
 
