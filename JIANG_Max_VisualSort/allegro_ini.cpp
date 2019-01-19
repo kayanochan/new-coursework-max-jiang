@@ -13,7 +13,9 @@ int initializeAllegro(ALLEGRO_DISPLAY *&display, ALLEGRO_EVENT_QUEUE *&event_que
                                    nullptr, ALLEGRO_MESSAGEBOX_ERROR);
         return -1;
     }
-    al_set_window_title(display, "Sorting");
+
+    al_set_window_title(display, "Visual Sort");
+
 	// Initialize keyboard routines
 	if (!al_install_keyboard()) {
 	    al_show_native_message_box(display, "Error", "Error",
